@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+.topspace{
+    padding-top: 25px;
+}
+ul{
+    float: right;   
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s ease;
+}
+.logo img{
+    float: left;
+    width: 70px;
+    height: auto;
+    margin-top: 15px;
+}
+.logo-text{
+    display: inline-block;
+    padding-left: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.box {
+  float: left;
+  padding: 20px;  
+  background: #ccc;
+  margin: 20px;
+  margin-top: 190px;
+  width:150px;
+  height:250px;
+  border:3px solid #fff;
+}
+
+.showcase{
+    margin-top: 120px;
+   background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.showcase li {
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  display: flex;
+}
+
+.slot {
+  background-color: #ccc;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  border:1px solid #fff;
+}
+
+.slot.selected {
+  background-color: #6feaf6;
+}
+.box.selected {
+  background-color: #6feaf6;
+}
+.box.booked {
+  background-color: #444439;
+}
+.slot.booked {
+  background-color: #444439;
+}
+.box:not(.booked):hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.showcase .slot:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.alert{
+  text-align: center;
+  margin-top:12%;
+  padding:3px;
+  background:#79c879;
+  color:#fff;
+  display:none;
+}
+
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #ffff;    
+}
+.form{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.frm{
+    color: #fff;
+}
+.formcss{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    display: inline-block;
+}
+.ftitle{
+    position: absolute;
+    padding: 20px;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(to right,#348F50, #56B4D3);
+
+}
+.input{
+    position: relative;
+    top: 3px;
+    padding: 5px 22px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline-color: white;
+    color: #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: red;
+}
+.fbtn{
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    top: 15px;
+    box-shadow: 0 0 20px 9px #fff;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #fff;
+}
+.head{
+    padding-top: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+.info{
+    text-decoration: none;
+    color: #fff;
+}
+.Cosmology{
+    text-decoration: none;
+    color: #fff;
+}
+table{
+    text-decoration: none;
+    color: #fff;
+}
