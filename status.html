@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo time(); ?">
+<title>Parking status</title>
+       
+<style>
+    
+
+header{
+    background-color: slategrey ;
+    height: 100vh;
+}
+.head{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    height: 90px;
+    width: 100%;
+    background: linear-gradient(to right,#348F50, #56B4D3);
+    z-index: 100;
+}
+
+</style>
+<body>
+   <header>
+
+     <div class="head"><h1>Check slot</h1></div>
+
+         <ul class="showcase">
+      <li>
+        <div class="slot"></div>
+        <small>Available</small>
+      </li>
+
+      <li>
+        <div class="slot selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="slot booked"></div>
+        <small>Booked</small>
+      </li>
+    </ul>
+    
+    <form id="parking">
+        <div class = "container" >
+            <div class = "box"  onclick="enableButton()" style="margin-left: 150px;">parking slot 1</div>    
+            <div class = "box"  onclick="enableButton()">parking slot 2</div> 
+            <div class = "box"  onclick="enableButton()">parking slot 3</div>    
+            <div class = "box"  onclick="enableButton()">parking slot 4</div> 
+        </div>
+            <div class="form">
+                
+                 <button id="button" value="button" onclick="nextPage()" disabled >Book now</button>
+                 <script>
+                    function nextPage(){
+                        document.location.href="register.html";
+                    }
+                 </script>
+             </div>
+        </div>
+    </form>
+    </header> 
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js?v=<?php echo time(); ?"></script> 
+    <script src="status.js?v=<?php echo time(); ?"></script>
+    <script>
+        function enableButton() {
+            document.getElementById("button").disabled = false;
+        }
+    </script>
+    
+</body>
+</html>

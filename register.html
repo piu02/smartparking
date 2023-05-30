@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=<?php echo time(); ?">
+    <link rel="stylesheet" type="text/css" href="css/form.css?v=<?php echo time(); ?">
+    <title>Register</title>
+     
+</head>
+
+<style type="text/css">
+        label{
+            width: 240px;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        header{
+            background-color: slategrey ;
+            height: 100vh;
+            }
+</style>
+<body>
+    <header >
+    <div class="ftitle"><h1>Registration Form</h1> </div>  
+    </header>
+    <div class="formcss">
+     <form id="form">
+        <label for="fname"><b>First name:</b></label>
+        <input id="fname" type="text"  class="input" placeholder="First name" required><br>
+  
+        <label for="lname"><b>Last name:</b></label>
+        <input id="lname" type="text" class="input" placeholder="Last name" required><br>
+
+        <label for="slot"><b>Enter slot no:</b></label> 
+        <input id="slot" type="text" class="input" placeholder="slot" pattern= "[1-4]{1}"required><br> 
+
+        <label for="phone"><b>Phone no:</b></label>
+        <input id="phone" type="tel" class="input" placeholder="phone number" pattern= "[0-9]{10}"required><br>
+        
+        <label for="alpha"><b>Plate number:</b></label>
+        <input id="alpha" type="text" class="input" placeholder="plate-number" pattern= "[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}"required><br>
+
+        <div class="fbtn">
+            <button type="submit" class="toggle-btn" onclick="nextStatus()">Register</button>
+            <!-- <script>
+                function nextStatus(){
+                        document.location.href="status1.html";
+                    }
+            </script> -->
+        </div>
+     </form>
+     <div class="alert">Your form has been submitted</div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js?v=<?php echo time(); ?"></script>
+   <script src="register.js?v=<?php echo time(); ?"></script>
+</body>
+</html>
+
+
+      
+       
+        
